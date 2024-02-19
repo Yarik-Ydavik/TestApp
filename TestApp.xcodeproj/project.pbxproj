@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		D74D5F932B7F952700312179 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D5F922B7F952700312179 /* TestAppApp.swift */; };
-		D74D5F952B7F952700312179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D5F942B7F952700312179 /* ContentView.swift */; };
 		D74D5F972B7F952800312179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74D5F962B7F952800312179 /* Assets.xcassets */; };
 		D74D5F9A2B7F952800312179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74D5F992B7F952800312179 /* Preview Assets.xcassets */; };
+		D74D5FA22B7F95C500312179 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D5FA12B7F95C500312179 /* ChatsView.swift */; };
+		D74D5FA42B7F95D900312179 /* ChatUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D5FA32B7F95D900312179 /* ChatUserView.swift */; };
+		D74D5FA62B7F95F600312179 /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D5FA52B7F95F600312179 /* ContactView.swift */; };
+		D769929C2B82C6B10068438C /* EditContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D769929B2B82C6B10068438C /* EditContact.swift */; };
+		D7A742EF2B8081E50011C818 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A742EE2B8081E50011C818 /* Message.swift */; };
+		D7C081DB2B8138B200908631 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C081DA2B8138B200908631 /* ChatViewModel.swift */; };
+		D7C081DE2B81E37200908631 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C081DD2B81E37200908631 /* TabItem.swift */; };
+		D7F37A9D2B80E85E0035893F /* Chats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F37A9C2B80E85E0035893F /* Chats.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D74D5F8F2B7F952700312179 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74D5F922B7F952700312179 /* TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppApp.swift; sourceTree = "<group>"; };
-		D74D5F942B7F952700312179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D74D5F962B7F952800312179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D74D5F992B7F952800312179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D74D5FA12B7F95C500312179 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		D74D5FA32B7F95D900312179 /* ChatUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUserView.swift; sourceTree = "<group>"; };
+		D74D5FA52B7F95F600312179 /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
+		D769929B2B82C6B10068438C /* EditContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContact.swift; sourceTree = "<group>"; };
+		D7A742EE2B8081E50011C818 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D7C081DA2B8138B200908631 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		D7C081DD2B81E37200908631 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		D7F37A9C2B80E85E0035893F /* Chats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chats.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		D74D5F912B7F952700312179 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7C081DC2B81E34E00908631 /* Components */,
+				D7C081D92B8138A200908631 /* ViewModel */,
+				D7A742ED2B8081CD0011C818 /* Model */,
+				D74D5FA02B7F95A600312179 /* View */,
 				D74D5F922B7F952700312179 /* TestAppApp.swift */,
-				D74D5F942B7F952700312179 /* ContentView.swift */,
 				D74D5F962B7F952800312179 /* Assets.xcassets */,
 				D74D5F982B7F952800312179 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				D74D5F992B7F952800312179 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D74D5FA02B7F95A600312179 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D74D5FA12B7F95C500312179 /* ChatsView.swift */,
+				D74D5FA32B7F95D900312179 /* ChatUserView.swift */,
+				D74D5FA52B7F95F600312179 /* ContactView.swift */,
+				D769929B2B82C6B10068438C /* EditContact.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7A742ED2B8081CD0011C818 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7A742EE2B8081E50011C818 /* Message.swift */,
+				D7F37A9C2B80E85E0035893F /* Chats.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7C081D92B8138A200908631 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D7C081DA2B8138B200908631 /* ChatViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D7C081DC2B81E34E00908631 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D7C081DD2B81E37200908631 /* TabItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D74D5F952B7F952700312179 /* ContentView.swift in Sources */,
+				D74D5FA22B7F95C500312179 /* ChatsView.swift in Sources */,
+				D7C081DB2B8138B200908631 /* ChatViewModel.swift in Sources */,
 				D74D5F932B7F952700312179 /* TestAppApp.swift in Sources */,
+				D769929C2B82C6B10068438C /* EditContact.swift in Sources */,
+				D7A742EF2B8081E50011C818 /* Message.swift in Sources */,
+				D74D5FA62B7F95F600312179 /* ContactView.swift in Sources */,
+				D74D5FA42B7F95D900312179 /* ChatUserView.swift in Sources */,
+				D7C081DE2B81E37200908631 /* TabItem.swift in Sources */,
+				D7F37A9D2B80E85E0035893F /* Chats.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +340,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +370,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
